@@ -1,0 +1,99 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="ejs.css"></link>
+</head>
+<body>
+    <h2>个人征信报告</h2>
+    <h3>（授信机构版）</h3>
+    <div id="table0_1"></div>
+    <!-- 其他证件信息 -->
+    <div id="table0_2"></div>
+    <!-- 防欺诈警示标志 -->
+    <div id="table0_3"></div>
+    <!-- 异议信息提示 -->
+    <div id="table0_4"></div>
+
+    <h3>一 个人基本信息</h3>
+    <!-- 身份信息 -->
+    <div id="table1_1"></div>
+    <!-- 配偶信息 -->
+    <div id="table1_2"></div>
+    <!-- 居住信息 -->
+    <div id="table1_3"></div>
+    <!-- 职业信息 -->
+    <div id="table1_4"></div>
+
+    <h3>二 信息概要</h3>
+    <!-- 个人信用报告“数字解读” -->
+    <div id="table2_1"></div>
+    <!-- 信贷交易信息提示 -->
+    <div id="table2_2"></div>
+    <!-- 信贷交易违约信息概要 -->
+    <div id="table2_3"></div>
+    <!-- 信贷交易授信及负债信息概要 -->
+    <div id="table2_4"></div>
+    <!-- 非信贷交易信息概要 -->
+    <div id="table2_5"></div>
+    <!-- 公共信息概要 -->
+    <div id="table2_6"></div>
+    <!-- 查询记录概要 -->
+    <div id="table2_9"></div>
+
+    <h3>三 信贷交易信息明细</h3>
+    <!-- 被追偿信息 -->
+    <div id="table3_1"></div>
+</body>
+<script src='ejs.js'></script>
+<script src='ejs.mock.js'></script>
+<script src='formate.js'></script>
+<script src='table0_1.js'></script>
+<script src='table0_2.js'></script>
+<script src='table0_3.js'></script>
+<script src='table0_4.js'></script>
+<script src='table1_1.js'></script>
+<script src='table1_2.js'></script>
+<script src='table1_3.js'></script>
+<script src='table1_4.js'></script>
+<script src='table2_1.js'></script>
+<script src='table2_2.js'></script>
+<script src='table2_3.js'></script>
+<script src='table2_4.js'></script>
+<script src='table2_5.js'></script>
+<script src='table2_6.js'></script>
+<script src='table2_9.js'></script>
+<script>
+    document.getElementById("table0_1").innerHTML = ejs.render(template.table0_1, data);
+    // 其他证件信息
+    document.getElementById("table0_2").innerHTML = ejs.render(template.table0_2, data);
+    // 防欺诈警示标志
+    document.getElementById("table0_3").innerHTML = ejs.render(template.table0_3, data);
+    // 异议信息提示
+    document.getElementById("table0_4").innerHTML = ejs.render(template.table0_4, data);
+
+    // 个人基本信息
+    // 身份信息
+    document.getElementById("table1_1").innerHTML = ejs.render(template.table1_1, data);
+    // 配偶信息
+    document.getElementById("table1_2").innerHTML = ejs.render(template.table1_2, data);
+    // 居住信息
+    document.getElementById("table1_3").innerHTML = ejs.render(template.table1_3, data);
+    // 职业信息
+    document.getElementById("table1_4").innerHTML = ejs.render(template.table1_4, data);
+
+    // 信息概要
+    // 个人信用报告数字解读
+    document.getElementById("table2_1").innerHTML = ejs.render(template.table2_1, data);
+    // 信贷交易信息提示
+    document.getElementById("table2_2").innerHTML = ejs.render(template.table2_2, data);
+    // 信贷交易违约信息概要
+    document.getElementById("table2_3").innerHTML = ejs.render(template.table2_3, data);
+    // 信贷交易授信及负债信息概要
+    document.getElementById("table2_4").innerHTML = ejs.render(template.table2_4, data);
+    // 非信贷交易信息概要
+    document.getElementById("table2_5").innerHTML = ejs.render(template.table2_5, data);
+    // 公共信息概要
+    document.getElementById("table2_6").innerHTML = ejs.render(template.table2_6, data);
+    // 查询记录概要
+    document.getElementById("table2_9").innerHTML = ejs.render(template.table2_9, data);
+</script>
+</html>

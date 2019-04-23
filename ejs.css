@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    color: #0066cc;
+}
+
+table {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto auto 40px auto;
+    font-size: 18px;
+    color: #0066cc;
+}
+table th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+}
+table td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+}
+tr.center td {
+    text-align: center;
+}
+thead {
+    display: table-row-group;
+}
+tr {
+    page-break-before: always;
+    page-break-after: always;
+    page-break-inside: avoid;
+}
